@@ -5,11 +5,13 @@ import Title from "./Title";
 const Card = styled.div`
   display: block;
   align-items: center;
+  width: 100%;
 
   iframe {
+    margin-inline: auto;
     border: 0;
     height: 30rem;
-    width: 90vw;
+    width: 100vw;
     max-width: 70rem;
     border-radius: 1rem;
     display: flex;
