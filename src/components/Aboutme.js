@@ -6,10 +6,11 @@ const OutCard = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
+  margin-inline: 1rem;
 `;
 const BiographyCard = styled.div`
   max-width: 50vw;
-  min-width: 25rem;
+  min-width: 20rem;
   display: block;
 `;
 const ProfileCard = styled.div`

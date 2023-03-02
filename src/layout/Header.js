@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderSC = styled.header`
   display: grid;
-  grid-template-columns: 15rem auto 15rem;
+  grid-template-columns: 13rem auto 13rem;
   min-height: 3rem;
   align-items: center;
   box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
