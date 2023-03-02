@@ -1,0 +1,52 @@
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineMedicalServices } from "react-icons/md";
+import { MdBiotech } from "react-icons/md";
+import { BiVideoPlus } from "react-icons/bi";
+import { GiTeacher } from "react-icons/gi";
+
+export const Config = {
+  cardImgId: "img-2.jpg",
+  profileImgId: "img-3.jpg",
+  maps: "https://goo.gl/maps/4vGaVgzU5KAvwT9A9",
+  address:
+    "DOC Castelo - Av. Visc. de Guarapuava, 4628 - Sala 908 - Batel, Curitiba - PR, 80240-010",
+  socials: [
+    {
+      name: "instagram",
+      link: "https://www.instagram.com/dr.henrique.stachon/",
+      icon: <FaInstagram />,
+    },
+  ],
+
+  actuator: [
+    {
+      icon: <MdOutlineMedicalServices />,
+      text: "Cirurgia geral",
+    },
+    {
+      icon: <MdBiotech />,
+      text: "Mestre em biotecnologia",
+    },
+    {
+      icon: <BiVideoPlus />,
+      text: "Especialista em videolaparoscopia",
+    },
+    {
+      icon: <GiTeacher />,
+      text: "Professor do curso de medicina",
+    },
+  ],
+
+  name: "Henrique Stachon",
+  description: "Cirurgia Geral e Cuidado Integral a Saúde e Bem Estar",
+
+  biography: [
+    "Olá, meu nome é Henrique Stachon e sou um médico formado pela Universidade Federal do Paraná em 2009. Desde então, venho buscando aprimorar meus conhecimentos e especializações na área da saúde.",
+    "Obtive o Título de Especialista em Cirurgia Geral pelo Hospital do Trabalhador (HT) em 2012 e, em 2017, fiz a Especialização em Preceptoria em SUS pelo Hospital Sírio Libanês. Em 2018, concluí o Mestrado em Biotecnologia Industrial pela Universidade Positivo.",
+    "Desde fevereiro de 2018, tenho a honra de atuar como docente do Curso de Medicina das Faculdades Pequeno Príncipe em Curitiba-PR, sendo Preceptor do Internato de Cirurgia Geral e Professor de Habilidades Médicas e Simulação. Além disso, sou o Diretor Clínico e Responsável Técnico da SOS Unimed Curitiba (MEDILAR), reafirmando meu compromisso com a qualidade e excelência no cuidado aos pacientes.",
+
+    "Atualmente, estou me aperfeiçoando ainda mais na área da saúde, fazendo uma Pós-graduação em Bases da Saúde Integrativa e Bem-estar pelo Hospital Albert Einstein. Minhas áreas de interesse incluem Cirurgia Videolaparoscópica, Cirurgia Minimamente Invasiva, Cirurgia do Aparelho Digestivo, Medicina Integrativa, Reabilitação e Cuidados Pós-operatórios.",
+
+    "Como médico, sempre busco oferecer o melhor tratamento e cuidado aos meus pacientes, utilizando todo o meu conhecimento técnico e prático para garantir o sucesso dos procedimentos e a recuperação plena dos meus pacientes.",
+  ],
+};

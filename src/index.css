@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --green-color: #3FB498
+}
+
+section {
+  align-items: center;
+  margin-block: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+p {
+  opacity: 70%;
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  height: 2rem;
+  padding-inline: 1rem;
+  border-radius: 0.3em;
+}
+
+main {
+  padding-top: 1rem;
+}
