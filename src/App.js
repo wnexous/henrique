@@ -7,6 +7,7 @@ import Footer from "./layout/Footer";
 import MobileNavMenu from "./layout/MobileNavMenu";
 import responsive from "./functions/Responsive";
 import { useEffect, useState } from "react";
+import Notfound from "./views/Notfound";
 
 function App() {
   const [mobile, setMobile] = useState("");
@@ -20,11 +21,12 @@ function App() {
         <main>
           <Routes>
             <Route element={<Home />} path={"/"} />
+            <Route element={<Notfound />} path={"*"} />
           </Routes>
         </main>
         <MobileNavMenu mobile={mobile} />
 
-        <Footer />
+        <Footer mobile={mobile} />
       </BrowserRouter>
     </div>
   );

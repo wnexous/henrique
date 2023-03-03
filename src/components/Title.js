@@ -1,15 +1,14 @@
-export default function Title(props) {
+export default function Title(props = { color: String }) {
   return (
-    <p
+    <h1
       style={{
-        fontSize: "1.5rem",
-        opacity: "70%",
+        color: props.color || "rgb(0,0,0,0.7)",
         alignItems: "center",
         textAlign: "center",
-        
+        width: "100%",
       }}
     >
       {props.children}
-    </p>
+    </h1>
   );
 }

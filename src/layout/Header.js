@@ -34,10 +34,11 @@ const Btn = styled.div`
   button {
     margin-left: auto;
     min-width: 10rem;
+    margin-inline: 1rem;
   }
 `;
 
-export default function Header(props) {
+export default function Header(props = { mobile: String }) {
   return (
     <HeaderSC>
       <Logo>
@@ -49,17 +50,17 @@ export default function Header(props) {
         }}
       >
         <li>
-          <a href="#actuator">Área de atuação</a>
+          <a href="/#actuator">Área de atuação</a>
         </li>
         <li>
-          <a href="#aboutme">Sobre mim</a>
+          <a href="/#aboutme">Sobre mim</a>
         </li>
         <li>
-          <a href="#local">Local</a>
+          <a href="/#local">Local</a>
         </li>
       </Nav>
       <Btn>
-        <button>Agende sua cunsulta</button>
+        <button >Agende sua cunsulta</button>
       </Btn>
     </HeaderSC>
   );

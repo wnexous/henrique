@@ -4,16 +4,16 @@ import { MdOutlineMedicalServices, MdOutlinePerson } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 
 const NavMobile = styled.nav`
+  z-index: 100;
   position: fixed;
   width: 100%;
-  min-height: 2rem;
+  height: 3rem;
   background-color: white;
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
   bottom: 0;
   display: flex;
   justify-content: space-around;
   list-style: none;
-  align-items: center;
   padding-block: 1rem;
 
   li {
@@ -26,8 +26,8 @@ const NavMobile = styled.nav`
       color: rgb(0, 0, 0, 0.7);
     }
     svg {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 1.3rem;
+      width: 1.3rem;
       margin-inline: auto;
       display: flex;
     }
@@ -45,19 +45,19 @@ export default function MobileNavMenu(props = { mobile: String }) {
       }}
     >
       <li>
-        <a href="#actuator">
+        <a href="/#actuator">
           <MdOutlineMedicalServices />
-          <span>Áreas de atuação</span>
+          <span>Atuação</span>
         </a>
       </li>
       <li>
-        <a href="#aboutme">
+        <a href="/#aboutme">
           <MdOutlinePerson />
           <span>Sobre mim</span>
         </a>
       </li>
       <li>
-        <a href="#local">
+        <a href="/#local">
           <GoLocation />
           <span>Local</span>
         </a>

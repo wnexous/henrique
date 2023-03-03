@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import responsive from "../functions/Responsive";
 import { Config } from "../config/Config";
 const FooterSC = styled.header`
@@ -41,13 +40,18 @@ const CardFooter = styled.div`
   }
 `;
 
-export default function Footer() {
+export default function Footer(props = { mobile: String }) {
   const [responFooter, setResponFooter] = useState("");
   useEffect(() => {
     responsive({ min: 800, setState: setResponFooter });
   }, []);
   return (
-    <FooterSC style={{ display: responFooter }}>
+    <FooterSC
+      style={{
+        display: responFooter,
+        paddingBottom: props.mobile === "block" ? "8rem" : "3rem",
+      }}
+    >
       <h3>Henrique Stachon</h3>
       <CardFooter>
         <h3>Links rapidos</h3>
