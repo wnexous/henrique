@@ -57,7 +57,7 @@ const SubContent = styled.div`
     align-content: center;
     width: 30%;
     max-width: 40rem;
-    min-width: 20rem;
+    min-width: 18rem;
     padding: 1rem;
     margin: auto;
     &:nth-child(1) {

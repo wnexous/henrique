@@ -2,11 +2,18 @@ import styled from "styled-components";
 import React from "react";
 
 const HeaderSC = styled.header`
-  display: grid;
-  grid-template-columns: 13rem auto 13rem;
   min-height: 3rem;
   align-items: center;
   box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
+  display: block;
+  align-content: center;
+  div {
+    margin-inline: auto;
+    max-width: 90rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 const Logo = styled.div`
@@ -41,27 +48,29 @@ const Btn = styled.div`
 export default function Header(props = { mobile: String }) {
   return (
     <HeaderSC>
-      <Logo>
-        <h3>Henrique Stachon</h3>
-      </Logo>
-      <Nav
-        style={{
-          display: props.mobile === "block" ? "none" : "flex",
-        }}
-      >
-        <li>
-          <a href="/#actuator">Área de atuação</a>
-        </li>
-        <li>
-          <a href="/#aboutme">Sobre mim</a>
-        </li>
-        <li>
-          <a href="/#local">Local</a>
-        </li>
-      </Nav>
-      <Btn>
-        <button >Agende sua cunsulta</button>
-      </Btn>
+      <div>
+        <Logo>
+          <h3>Henrique Stachon</h3>
+        </Logo>
+        <Nav
+          style={{
+            display: props.mobile === "block" ? "none" : "flex",
+          }}
+        >
+          <li>
+            <a href="/#actuator">Área de atuação</a>
+          </li>
+          <li>
+            <a href="/#aboutme">Sobre mim</a>
+          </li>
+          <li>
+            <a href="/#local">Local</a>
+          </li>
+        </Nav>
+        <Btn>
+          <button>Agende sua cunsulta</button>
+        </Btn>
+      </div>
     </HeaderSC>
   );
 }
