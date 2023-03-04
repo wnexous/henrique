@@ -12,7 +12,7 @@ export default function Home() {
         <CardUser data={Config} />
       </section>
 
-      <section>
+      <section id="actuator">
         <Scheduling data={Config} />
       </section>
 

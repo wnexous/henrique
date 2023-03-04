@@ -1,4 +1,4 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMedicalServices } from "react-icons/md";
 import { MdBiotech } from "react-icons/md";
 import { BiVideoPlus } from "react-icons/bi";
@@ -10,13 +10,32 @@ export const Config = {
   maps: "https://goo.gl/maps/4vGaVgzU5KAvwT9A9",
   address:
     "DOC Castelo - Av. Visc. de Guarapuava, 4628 - Sala 908 - Batel, Curitiba - PR, 80240-010",
+
   socials: [
     {
-      name: "instagram",
+      name: "Instagram",
       link: "https://www.instagram.com/dr.henrique.stachon/",
       icon: <FaInstagram />,
     },
+    {
+      name: "WhatsApp",
+      link: "https://api.whatsapp.com/send?phone=554191590603",
+      icon: <FaWhatsapp />,
+    },
   ],
+
+  calls: {
+    whatsapp: {
+      text: "Whatsapp",
+      link: "https://api.whatsapp.com/send?phone=554191590603",
+      iconLink: "/icon/whatsapp.svg",
+    },
+    doctoralia: {
+      text: "",
+      link: "https://www.doctoralia.com.br/henrique-stachon/cirurgiao-geral/curitiba",
+      iconLink: "/icon/doctoralia.svg",
+    },
+  },
 
   actuator: [
     {

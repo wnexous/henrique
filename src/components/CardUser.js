@@ -13,12 +13,15 @@ const Content = styled.div`
   height: 10rem;
 `;
 const Socials = styled.div`
+  gap: 1rem;
+
   span {
     -webkit-transition: 0.3s;
     &:hover {
       opacity: 50%;
     }
     svg {
+      margin-inline: 0.2rem;
       width: 1.3rem;
       height: 1.3rem;
     }

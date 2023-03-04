@@ -68,7 +68,9 @@ export default function Header(props = { mobile: String }) {
           </li>
         </Nav>
         <Btn>
-          <button>Agende sua cunsulta</button>
+          <button onClick={(e) => (window.location.href = "/#actuator")}>
+            Agende sua cunsulta
+          </button>
         </Btn>
       </div>
     </HeaderSC>

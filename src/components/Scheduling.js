@@ -57,8 +57,8 @@ const SubContent = styled.div`
     align-content: center;
     width: 30%;
     max-width: 40rem;
-    min-width: 18rem;
-    padding: 1rem;
+    min-width: 20rem;
+    padding-block: 1rem;
     margin: auto;
     &:nth-child(1) {
     }
@@ -67,15 +67,23 @@ const SubContent = styled.div`
       display: flex;
       align-items: center;
       button {
+        align-items: center;
         width: 100%;
         height: 100%;
+        display: flex;
+        font-size: 1.1rem;
+
+        img {
+          max-width: 7rem;
+          max-height: 2rem;
+        }
       }
     }
   }
 `;
 
-export default function Scheduling(props = { data: Array }) {
-
+export default function Scheduling({ data }) {
+  const { calls } = data;
   return (
     <Card>
       <Backgrond />
@@ -99,10 +107,19 @@ export default function Scheduling(props = { data: Array }) {
             Não perca mais tempo, clique no botão ao lado e agende já sua
             consulta. Estamos prontos para atendê-lo da melhor maneira possível.
           </div>
-          <div>
-            <button>
-              <FaWhatsapp /> Agende sua consulta
-            </button>
+          <div style={{ display: "block" }}>
+            {Object.keys(calls).map((cl, is) => (
+              <button
+                key={is}
+                style={{ marginBlock: "5px" }}
+                onClick={(e) => {
+                  window.location.href = calls[cl].link;
+                }}
+              >
+                <img src={calls[cl].iconLink} alt="icon-atendimento" />{" "}
+                {calls[cl].text}
+              </button>
+            ))}
           </div>
         </SubContent>
       </Content>

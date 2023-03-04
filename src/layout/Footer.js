@@ -16,7 +16,6 @@ const FooterSC = styled.header`
 
 const CardFooter = styled.div`
   display: block;
-  gap: 1rem;
 
   a {
     width: 100%;
@@ -30,6 +29,7 @@ const CardFooter = styled.div`
     }
   }
   svg {
+    margin-inline: 0.2rem;
     color: white;
     width: 1.3rem;
     height: 1.3rem;
