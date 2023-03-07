@@ -7,6 +7,7 @@ const HeaderSC = styled.header`
   box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
   display: block;
   align-content: center;
+  background-color: white;
   div {
     margin-inline: auto;
     max-width: 90rem;

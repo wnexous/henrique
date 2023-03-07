@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { FaWhatsapp } from "react-icons/fa";
-import Title from "./Title";
+import TitleLine from "./TitleLine";
 
 const Card = styled.div`
   background-color: var(--green-color);
@@ -38,14 +37,14 @@ const Content = styled.div`
   z-index: 6;
   position: relative;
   display: block;
+  padding-block: 7rem;
 `;
 const SubContent = styled.div`
   margin-inline: auto;
   z-index: 6;
   top: 0;
   bottom: 0;
-  padding: 2rem;
-  max-width: 55rem;
+  max-width: 50rem;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +89,7 @@ export default function Scheduling({ data }) {
       <Filter />
 
       <Content>
-        <Title color="white">Agende sua consulta</Title>
+        <TitleLine color="white">Agende sua consulta</TitleLine>
 
         <SubContent>
           <div>

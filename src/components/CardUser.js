@@ -5,6 +5,7 @@ const Card = styled.div`
   box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.2);
   align-items: center;
   margin: auto;
+  background-color: white;
 `;
 
 const Content = styled.div`
