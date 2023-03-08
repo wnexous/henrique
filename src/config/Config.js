@@ -47,7 +47,7 @@ export const Config = {
     },
     {
       icon: <CiMedicalCross />,
-      text: "Medicina integratriva",
+      text: "Medicina integrativa",
     },
     {
       icon: <BiVideoPlus />,
