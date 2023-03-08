@@ -3,6 +3,7 @@ import { MdOutlineMedicalServices } from "react-icons/md";
 import { MdBiotech } from "react-icons/md";
 import { BiVideoPlus } from "react-icons/bi";
 import { GiTeacher } from "react-icons/gi";
+import { CiMedicalCross } from "react-icons/ci";
 
 export const Config = {
   cardImgId: "img-2.jpg",
@@ -16,11 +17,13 @@ export const Config = {
       name: "Instagram",
       link: "https://www.instagram.com/dr.henrique.stachon/",
       icon: <FaInstagram />,
+      bgimg: "linear-gradient(90deg, #e40fcc, #ffc200)",
     },
     {
       name: "WhatsApp",
       link: "https://api.whatsapp.com/send?phone=554191590603",
       icon: <FaWhatsapp />,
+      bgimg: "linear-gradient(90deg, #00e576, #00a884)",
     },
   ],
 
@@ -43,13 +46,18 @@ export const Config = {
       text: "Cirurgia geral",
     },
     {
-      icon: <MdBiotech />,
-      text: "Mestre em biotecnologia",
+      icon: <CiMedicalCross />,
+      text: "Medicina integratriva",
     },
     {
       icon: <BiVideoPlus />,
       text: "Especialista em videolaparoscopia",
     },
+    {
+      icon: <MdBiotech />,
+      text: "Mestre em biotecnologia",
+    },
+
     {
       icon: <GiTeacher />,
       text: "Professor do curso de medicina",

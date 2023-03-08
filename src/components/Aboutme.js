@@ -29,11 +29,14 @@ const ProfileCard = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: 1px solid black;
     border-radius: 1rem;
     padding-inline: 1rem;
     -webkit-transition: 0.3s;
     cursor: pointer;
+    color: white;
+    p {
+      font-weight: 600;
+    }
 
     &:hover {
       background-color: black;
@@ -52,9 +55,11 @@ export default function Aboutme(props = { data: Object }) {
           <img src={"img/gallery/" + profileImgId} alt="profile-card" />
           {socials.map((scl, i) => (
             <div
+              key={i}
               onClick={(e) => {
                 window.location.href = scl.link;
               }}
+              style={{ backgroundImage: scl.bgimg }}
             >
               {scl.icon}
               <p>{scl.name}</p>

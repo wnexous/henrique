@@ -17,6 +17,7 @@ const Socials = styled.div`
   gap: 1rem;
 
   span {
+    
     -webkit-transition: 0.3s;
     &:hover {
       opacity: 50%;
