@@ -1,5 +1,6 @@
 import "./App.css";
 
+import WhatsappBtn from "./layout/WhatsappBtn";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./views/Home";
 import Header from "./layout/Header";
@@ -24,6 +25,7 @@ function App() {
             <Route element={<Notfound />} path={"*"} />
           </Routes>
         </main>
+        <WhatsappBtn />
         <MobileNavMenu mobile={mobile} />
 
         <Footer mobile={mobile} />

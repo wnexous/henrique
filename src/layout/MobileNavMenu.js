@@ -4,7 +4,7 @@ import { MdOutlineMedicalServices, MdOutlinePerson } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 
 const NavMobile = styled.nav`
-  z-index: 100;
+  z-index: 99;
   position: fixed;
   width: 100%;
   height: 3rem;
