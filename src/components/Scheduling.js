@@ -31,6 +31,7 @@ const Filter = styled.div`
 `;
 const Content = styled.div`
   padding-block: 3rem;
+  padding-bottom: 10rem;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -40,6 +41,7 @@ const Content = styled.div`
   padding-block: 7rem;
 `;
 const SubContent = styled.div`
+  padding-bottom: 5rem;
   margin-inline: auto;
   z-index: 6;
   top: 0;
@@ -77,6 +79,42 @@ const SubContent = styled.div`
           max-height: 2rem;
         }
       }
+    }
+  }
+`;
+
+const PlanosAtendidos = styled.div`
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  bottom: 0;
+  background-color: var(--green-color);
+  color: white;
+  margin: auto;
+  right: 0;
+  left: 0;
+  gap: 1rem;
+
+  div {
+    max-width: 40rem;
+    min-width: 20rem;
+    padding-block: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    div {
+      margin: auto;
+      text-align: center;
+
+      max-width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      font-size: large;
+      font-weight: 600;
     }
   }
 `;
@@ -121,6 +159,15 @@ export default function Scheduling({ data }) {
             ))}
           </div>
         </SubContent>
+
+        <PlanosAtendidos>
+          <div>
+            <div>Planos de saúde atendidos</div>
+            <div>
+              <img src="/icon/unimed.png" alt="plano-saude" />
+            </div>
+          </div>
+        </PlanosAtendidos>
       </Content>
     </Card>
   );

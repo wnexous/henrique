@@ -7,7 +7,7 @@ const Whatsapp = styled.div`
   height: 4rem;
   width: 4rem;
   position: fixed;
-  right: 2rem;
+  right: 7vw;
   bottom: 7rem;
   background-color: #00e576;
   border-radius: 10rem;
