@@ -89,7 +89,7 @@ const PlanosAtendidos = styled.div`
   align-content: center;
   top: 0;
   background-color: var(--green-color-light);
-  color: black;
+  color: rgb(0, 0, 0, 0.8);
   margin: auto;
   right: 0;
   left: 0;
