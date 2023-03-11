@@ -18,6 +18,7 @@ const NavMobile = styled.nav`
 
   li {
     width: 8rem;
+    margin: auto;
     text-align: center;
     display: block;
     align-items: center;
@@ -31,8 +32,8 @@ const NavMobile = styled.nav`
       margin-inline: auto;
       display: flex;
     }
-    span {
-      margin: 0;
+    p {
+      margin-block: 0;
       text-align: center;
     }
   }
@@ -47,19 +48,19 @@ export default function MobileNavMenu(props = { mobile: String }) {
       <li>
         <a href="/#actuator">
           <MdOutlineMedicalServices />
-          <span>Atuação</span>
+          <p>Atuação</p>
         </a>
       </li>
       <li>
         <a href="/#aboutme">
           <MdOutlinePerson />
-          <span>Sobre mim</span>
+          <p>Sobre mim</p>
         </a>
       </li>
       <li>
         <a href="/#local">
           <GoLocation />
-          <span>Local</span>
+          <p>Local</p>
         </a>
       </li>
     </NavMobile>

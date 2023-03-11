@@ -12,12 +12,18 @@ const Content = styled.div`
   padding: 2rem;
   width: 20rem;
   height: 10rem;
+  h3,
+  p {
+    width: 100%;
+    text-align: center;
+  }
 `;
 const Socials = styled.div`
-  gap: 1rem;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
 
   span {
-    
     -webkit-transition: 0.3s;
     &:hover {
       opacity: 50%;

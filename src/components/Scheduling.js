@@ -19,7 +19,7 @@ const Backgrond = styled.div`
   bottom: 0;
   width: 100%;
 
-  filter: blur(5px) grayscale(20%) brightness(70%);
+  filter: blur(3px) grayscale(20%) brightness(50%);
 `;
 const Filter = styled.div`
   position: absolute;
@@ -31,17 +31,17 @@ const Filter = styled.div`
 `;
 const Content = styled.div`
   padding-block: 3rem;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
+  padding-top: 10rem;
   top: 0;
   bottom: 0;
   width: 100%;
   z-index: 6;
   position: relative;
   display: block;
-  padding-block: 7rem;
 `;
 const SubContent = styled.div`
-  padding-bottom: 5rem;
+  padding-top: 5rem;
   margin-inline: auto;
   z-index: 6;
   top: 0;
@@ -88,7 +88,7 @@ const PlanosAtendidos = styled.div`
   width: 100%;
   justify-content: center;
   align-content: center;
-  bottom: 0;
+  top: 0;
   background-color: var(--green-color);
   color: white;
   margin: auto;
@@ -127,6 +127,14 @@ export default function Scheduling({ data }) {
       <Filter />
 
       <Content>
+        <PlanosAtendidos>
+          <div>
+            <div>Planos de saúde atendidos</div>
+            <div>
+              <img src="/icon/unimed.png" alt="plano-saude" />
+            </div>
+          </div>
+        </PlanosAtendidos>
         <TitleLine color="white">Agende sua consulta</TitleLine>
 
         <SubContent>
@@ -159,15 +167,6 @@ export default function Scheduling({ data }) {
             ))}
           </div>
         </SubContent>
-
-        <PlanosAtendidos>
-          <div>
-            <div>Planos de saúde atendidos</div>
-            <div>
-              <img src="/icon/unimed.png" alt="plano-saude" />
-            </div>
-          </div>
-        </PlanosAtendidos>
       </Content>
     </Card>
   );

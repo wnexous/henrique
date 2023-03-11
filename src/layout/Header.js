@@ -69,7 +69,7 @@ export default function Header(props = { mobile: String }) {
           </li>
         </Nav>
         <Btn>
-          <button onClick={(e) => (window.location.href = "/#actuator")}>
+          <button onClick={(e) => (window.location.href = "#consultation")}>
             Agende sua cunsulta
           </button>
         </Btn>

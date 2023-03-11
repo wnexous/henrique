@@ -12,20 +12,20 @@ export default function Home() {
         <CardUser data={Config} />
       </section>
 
-      <section id="actuator">
-        <Scheduling data={Config} />
+      <section id="aboutme">
+        <Aboutme data={Config} />
       </section>
 
       <section id="actuator">
         <Actuator data={Config} />
       </section>
 
-      <section id="aboutme">
-        <Aboutme data={Config} />
-      </section>
-
       <section id="local">
         <Maps data={Config} />
+      </section>
+
+      <section id="consultation">
+        <Scheduling data={Config} />
       </section>
     </main>
   );

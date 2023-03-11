@@ -64,11 +64,11 @@ export const Config = {
     },
   ],
 
-  name: "Henrique Stachon",
+  name: "Dr. Henrique Stachon",
   description: "Cirurgia Geral e Cuidado Integral a Saúde e Bem Estar",
 
   biography: [
-    "Olá, meu nome é Henrique Stachon e sou um médico formado pela Universidade Federal do Paraná em 2009. Desde então, venho buscando aprimorar meus conhecimentos e especializações na área da saúde.",
+    "Olá, sou Dr. Henrique Stachon e sou um médico formado pela Universidade Federal do Paraná em 2009. Desde então, venho buscando aprimorar meus conhecimentos e especializações na área da saúde.",
     "Obtive o Título de Especialista em Cirurgia Geral pelo Hospital do Trabalhador (HT) em 2012 e, em 2017, fiz a Especialização em Preceptoria em SUS pelo Hospital Sírio Libanês. Em 2018, concluí o Mestrado em Biotecnologia Industrial pela Universidade Positivo.",
     "Desde fevereiro de 2018, tenho a honra de atuar como docente do Curso de Medicina das Faculdades Pequeno Príncipe em Curitiba-PR, sendo Preceptor do Internato de Cirurgia Geral e Professor de Habilidades Médicas e Simulação. Além disso, sou o Diretor Clínico e Responsável Técnico da SOS Unimed Curitiba (MEDILAR), reafirmando meu compromisso com a qualidade e excelência no cuidado aos pacientes.",
 
