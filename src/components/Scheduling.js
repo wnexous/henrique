@@ -2,7 +2,6 @@ import styled from "styled-components";
 import TitleLine from "./TitleLine";
 
 const Card = styled.div`
-
   background-color: var(--green-color);
   min-height: 20rem;
   width: 100%;
@@ -19,7 +18,6 @@ const Backgrond = styled.div`
   top: 0;
   bottom: 0;
   width: 100%;
-
   filter: blur(3px) grayscale(20%) brightness(50%);
 `;
 const Filter = styled.div`
@@ -90,8 +88,8 @@ const PlanosAtendidos = styled.div`
   justify-content: center;
   align-content: center;
   top: 0;
-  background-color: var(--green-color);
-  color: white;
+  background-color: var(--green-color-light);
+  color: black;
   margin: auto;
   right: 0;
   left: 0;

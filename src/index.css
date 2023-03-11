@@ -14,7 +14,8 @@ code {
 }
 
 :root {
-  --green-color: #3FB498
+  --green-color: #3FB498;
+  --green-color-light: #ffffff;
 }
 
 section {
