@@ -48,7 +48,7 @@ export default function CardUser(props = { data: Object }) {
   useEffect(() => {
     responsive({ min: 800, setState: setResp });
   }, []);
-  const { socials, name, description, cardImgId } = props.data;
+  const { socials, name, description, cardimgid } = props.data;
   return (
     <Card style={{ display: resp }}>
       <Content>
@@ -58,7 +58,7 @@ export default function CardUser(props = { data: Object }) {
         <Socials>
           {socials.map((scl, i) => (
             <span
-              key={scl.name + i}
+              key={i}
               onClick={(e) => {
                 window.location.href = scl.link;
               }}
@@ -69,7 +69,7 @@ export default function CardUser(props = { data: Object }) {
         </Socials>
       </Content>
       <ImgCard
-        style={{ backgroundImage: `url('/img/gallery/${cardImgId}')` }}
+        style={{ backgroundImage: `url('/img/gallery/${cardimgid}')` }}
       ></ImgCard>
     </Card>
   );

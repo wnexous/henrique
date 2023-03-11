@@ -75,7 +75,9 @@ export default function Footer(props = { mobile: String }) {
       <CardFooter>
         <h3>Sociais</h3>
         {Config.socials.map((scl, i) => (
-          <a href={scl.link}>{scl.icon}</a>
+          <a href={scl.link} key={i}>
+            {scl.icon}
+          </a>
         ))}
       </CardFooter>
     </FooterSC>

@@ -2,7 +2,7 @@ export default function Space() {
   return (
     <div
       style={{
-        height: "6rem",
+        height: "3rem",
       }}
     ></div>
   );

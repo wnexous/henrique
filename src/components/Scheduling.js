@@ -5,7 +5,6 @@ const Card = styled.div`
   background-color: var(--green-color);
   min-height: 20rem;
   width: 100%;
-  box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.3);
   position: relative;
 `;
 
@@ -152,9 +151,9 @@ export default function Scheduling({ data }) {
             consulta. Estamos prontos para atendê-lo da melhor maneira possível.
           </div>
           <div style={{ display: "block" }}>
-            {Object.keys(calls).map((cl, is) => (
+            {Object.keys(calls).map((cl, i) => (
               <button
-                key={is}
+                key={i}
                 style={{ marginBlock: "5px" }}
                 onClick={(e) => {
                   window.location.href = calls[cl].link;

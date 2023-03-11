@@ -46,16 +46,16 @@ const ProfileCard = styled.div`
 `;
 
 export default function Aboutme(props = { data: Object }) {
-  const { name, profileImgId, socials, biography } = props.data;
+  const { name, profileimgid, socials, biography } = props.data;
   return (
     <div>
       <Title>Sobre mim</Title>
       <OutCard>
         <ProfileCard>
-          <img src={"img/gallery/" + profileImgId} alt="profile-card" />
+          <img src={"img/gallery/" + profileimgid} alt="profile-card" />
           {socials.map((scl, i) => (
             <div
-              key={i}
+              key={"scl_map_" + i}
               onClick={(e) => {
                 window.location.href = scl.link;
               }}
@@ -70,7 +70,7 @@ export default function Aboutme(props = { data: Object }) {
         <BiographyCard>
           <h3>{name}</h3>
           {biography.map((bio, i) => (
-            <p key={i}>{bio}</p>
+            <p key={"bio_" + i}>{bio}</p>
           ))}
         </BiographyCard>
       </OutCard>
