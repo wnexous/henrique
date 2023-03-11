@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import Logo from "../components/Logo";
 
 const HeaderSC = styled.header`
   min-height: 3rem;
@@ -17,8 +18,11 @@ const HeaderSC = styled.header`
   }
 `;
 
-const Logo = styled.div`
+const LogoContent = styled.div`
   text-align: center;
+  img {
+    max-width: 5rem;
+  }
 `;
 const Nav = styled.nav`
   display: flex;
@@ -50,9 +54,10 @@ export default function Header(props = { mobile: String }) {
   return (
     <HeaderSC>
       <div>
-        <Logo>
-          <h3>Henrique Stachon</h3>
-        </Logo>
+        <LogoContent>
+          <Logo />
+        </LogoContent>
+
         <Nav
           style={{
             display: props.mobile === "block" ? "none" : "flex",

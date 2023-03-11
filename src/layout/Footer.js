@@ -2,6 +2,9 @@ import styled from "styled-components";
 import React, { useEffect, useState } from "react";
 import responsive from "../functions/Responsive";
 import { Config } from "../config/Config";
+
+import Logo from "../components/Logo";
+
 const FooterSC = styled.header`
   padding: 3rem;
   align-items: center;
@@ -13,7 +16,13 @@ const FooterSC = styled.header`
   justify-content: center;
   gap: 10rem;
 `;
-
+const LogoContent = styled.div`
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 10rem;
+  }
+`;
 const CardFooter = styled.div`
   display: block;
 
@@ -52,7 +61,9 @@ export default function Footer(props = { mobile: String }) {
         paddingBottom: props.mobile === "block" ? "8rem" : "3rem",
       }}
     >
-      <h3>Henrique Stachon</h3>
+      <LogoContent>
+        <Logo />
+      </LogoContent>
       <CardFooter>
         <h3>Links rapidos</h3>
         <a href="#actuator">Área de atuação</a>
