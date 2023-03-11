@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TitleLine from "./TitleLine";
 
 const Card = styled.div`
+
   background-color: var(--green-color);
   min-height: 20rem;
   width: 100%;
