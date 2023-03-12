@@ -10,7 +10,7 @@ export const Config = {
   profileimgid: "img-7.jpg",
   maps: "https://goo.gl/maps/4vGaVgzU5KAvwT9A9",
   address:
-    "DOC Castelo - Av. Visc. de Guarapuava, 4628 - Sala 908 - Batel, Curitiba - PR, 80240-010",
+    "DOC Castelo Batel - Av. Visc. de Guarapuava, 4628 - Sala 908 - Batel, Curitiba - PR, 80240-010",
 
   socials: [
     {

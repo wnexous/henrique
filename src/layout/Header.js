@@ -75,7 +75,7 @@ export default function Header(props = { mobile: String }) {
         </Nav>
         <Btn>
           <button onClick={(e) => (window.location.href = "#consultation")}>
-            Agende sua cunsulta
+            Agende sua consulta
           </button>
         </Btn>
       </div>
